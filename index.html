@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajero con js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cajero.css">
+</head>
+
+<body>
+    <h1 style="text-align: center; font-family: Kommisar; font-weight: bold; font-size: 100px;">Banco</h1>
+    <img src="img/banco.avif" class="rounded mx-auto d-block" alt="...">
+
+
+    <div class="container mt-5">
+        <form>
+
+            <div class="row g-3">
+                <label for="nombre">Ingrese su nombre de usuario: </label>
+                <input type="text" class="form-control" placeholder="Nombre" id="nombre" required>
+            </div>
+            <br>
+            <div class="row g-3">
+                <label for="cantidad">Ingrese una cantidad a retirar: ($):</label>
+                <input type="number" class="form-control" placeholder="$00000" id="cantidad" required>
+            </div>
+        </form>
+
+    </div>
+
+
+    <div class="container" id="sobre-nosotros">
+        <div class="row">
+            <div class="col-md-12 text-center">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8 offset-md-2"
+                style="background-color: #f0f0f0; padding: 20px; border-radius: 10px; text-align: center;">
+                <button type="button" class="btn btn-primary" onclick="calcularBilletes()">Realizar Retiro</button>
+
+
+                <p>Resultado:
+                <p><br>
+                <div class="mostrar" id="mostrar" role="alert"></div>
+                <br>
+                <br>
+
+
+                <div class="columna">
+                    <div id="resultado">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="alert alert-success" id="b100">
+                                        Billetes de $100 :
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="alert alert-success" id="b50">
+                                        Billetes de $50 :
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="alert alert-success" id="b20">
+                                        Billetes de $20 :
+                                    </div>
+                                </div>
+
+
+
+                                <div class="col">
+                                    <div class="alert alert-success" id="b10">
+                                        Billetes de $10 :
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="alert alert-success" id="b5">
+                                        Billetes de $5 :
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="alert alert-success" id="b1">
+                                        Billetes de $1 :
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/cajero.js"></script>
+
+</body>
+
+</html>
